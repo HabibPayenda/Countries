@@ -40,6 +40,19 @@
   background-color: var(--color-pink-dark);
 }
 
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.navbar-left {
+  display: flex;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -78,12 +91,21 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .homeCardTop {
   flex: 4;
   width: 100%;
   text-align: center;
+}
+
+.cardIcon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--color-light);
+  font-size: 1.3rem;
 }
 
 .homeCardBottom {

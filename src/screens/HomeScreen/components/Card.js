@@ -11,6 +11,7 @@ function Card({ color }) {
   return (
     <div className={`homeCard ${color[0]}`}>
       <div className="homeCardTop">
+        <i className="fa-regular fa-circle-right cardIcon" />
         Top
       </div>
       <div className="homeCardBottom">
