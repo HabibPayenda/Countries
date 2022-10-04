@@ -1,15 +1,19 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-param-reassign */
 import React from 'react';
 import Card from './Card';
 
-function List() {
-  const data = [];
-
+function List({ data }) {
   const classes = [];
-
-  for (let i = 0; i < 10; i += 1) {
-    data.push(<Card color={[]} index={i} />);
-  }
+  const toDisplay = data.map((item) => (
+    <Card
+      name={item.name.common}
+      population={item.population}
+      flag={item.flags.png}
+      color={[]}
+      key={item.ccn3}
+    />
+  ));
 
   for (let c = 0; c < data.length; c += 1) {
     if (classes.length <= data.length) {
@@ -25,7 +29,7 @@ function List() {
     }
   }
 
-  data.forEach((card, index) => {
+  toDisplay.forEach((card, index) => {
     card.props.color.push(classes[index]);
   });
 
@@ -43,7 +47,7 @@ function List() {
           gridTemplateRows: rows,
         }}
       >
-        {data}
+        {toDisplay}
       </div>
     </>
   );

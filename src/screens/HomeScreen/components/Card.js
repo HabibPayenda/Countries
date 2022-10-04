@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Card({ color }) {
+function Card({
+  color, name, population, flag,
+}) {
   // const bgColor = (index + 1) % 2 === 0 ? 'dark' : 'light';
   // if (index === 0) {
   //   bgColor = 'light';
@@ -12,15 +14,11 @@ function Card({ color }) {
     <div className={`homeCard ${color[0]}`}>
       <div className="homeCardTop">
         <i className="fa-regular fa-circle-right cardIcon" />
-        Top
+        <img className="homeCardTopImg" src={flag} alt={name} />
       </div>
       <div className="homeCardBottom">
-        <p className="homeCardTitle">
-          Italy
-        </p>
-        <p className="homeCardNumber">
-          601
-        </p>
+        <p className="homeCardTitle">{name}</p>
+        <p className="homeCardNumber">{`${Math.round(population / 1000000)} M`}</p>
       </div>
     </div>
   );

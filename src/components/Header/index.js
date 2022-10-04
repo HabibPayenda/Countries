@@ -1,18 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-function Header() {
+function Header({ population }) {
   return (
     <div className="header">
-      <div className="headerLeft">
-        map
-      </div>
+      <div className="headerLeft">map</div>
       <div className="headerRight">
-        <p className="headerRightTitle">
-          Europe
-        </p>
-        <p className="headerRightSubTitle">
-          2958 views
-        </p>
+        <p className="headerRightTitle">Southern Asia</p>
+        <p className="headerRightSubTitle">{`${Math.round(population / 1000000)} M  People`}</p>
       </div>
     </div>
   );
