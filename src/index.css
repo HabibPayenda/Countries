@@ -1,6 +1,36 @@
+:root {
+  --color-pink-dark: #ec4c8b;
+  --color-pink-light: #fc5193;
+  --color-white: #fff;
+  --color-light: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+}
+
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: red;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-light);
+  background-color: var(--color-pink-dark);
 }
