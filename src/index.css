@@ -1,6 +1,7 @@
 :root {
   --color-pink-dark: #ec4c8b;
   --color-pink-light: #fc5193;
+  --color-pink-mid: #df4783;
   --color-white: #fff;
   --color-light: #fefefe;
 
@@ -25,7 +26,7 @@
 .homeScreen {
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 100%;
 }
 
 .navbar {
@@ -62,6 +63,12 @@
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.homeListTitle {
+  background-color: var(--color-pink-mid);
+  padding: 3px 5px;
+  color: var(--color-light);
 }
 
 .homeCard {

@@ -32,17 +32,20 @@ function List() {
   const numberOfRows = Math.round(data.length / 2);
   let rows = '';
   for (let j = 0; j < numberOfRows; j += 1) {
-    rows += ' 10rem';
+    rows += ' 18rem';
   }
   return (
-    <div
-      className="homeList"
-      style={{
-        gridTemplateRows: rows,
-      }}
-    >
-      {data}
-    </div>
+    <>
+      <div className="homeListTitle">STATS BY COUNTRY</div>
+      <div
+        className="homeList"
+        style={{
+          gridTemplateRows: rows,
+        }}
+      >
+        {data}
+      </div>
+    </>
   );
 }
 
