@@ -1,14 +1,15 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Header from '../../components/Header';
+import List from './components/List';
 
 function HomeScreen() {
   return (
-    <>
+    <div className="homeScreen">
       <Navbar />
       <Header />
-      <div>HomeScreen</div>
-    </>
+      <List />
+    </div>
   );
 }
 

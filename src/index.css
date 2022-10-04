@@ -3,6 +3,8 @@
   --color-pink-light: #fc5193;
   --color-white: #fff;
   --color-light: #fefefe;
+
+  font-size: 10px;
 }
 
 * {
@@ -11,17 +13,19 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 10px;
-}
-
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  color: red;
   width: 100vw;
+  height: 100vh;
+}
+
+.homeScreen {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
 }
 
 .navbar {
@@ -33,4 +37,72 @@ body {
   font-size: 1.2rem;
   color: var(--color-light);
   background-color: var(--color-pink-dark);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-pink-light);
+  color: var(--color-light);
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.headerRight {
+  flex: 1;
+}
+
+.homeList {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.homeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.homeCardTop {
+  flex: 4;
+  width: 100%;
+  text-align: center;
+}
+
+.homeCardBottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--color-light);
+  gap: 0.5rem;
+}
+
+.homeCardTitle {
+  font-size: 1.2rem;
+}
+
+.homeCardNumber {
+  font-size: 1em;
+}
+
+.dark {
+  background-color: var(--color-pink-dark);
+}
+
+.light {
+  background-color: var(--color-pink-light);
 }
