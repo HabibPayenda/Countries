@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "lato", sans-serif;
 }
 
 .App {
@@ -118,6 +119,8 @@
   padding: 1rem;
   color: var(--color-light);
   gap: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .homeCardTitle {
