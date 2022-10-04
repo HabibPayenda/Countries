@@ -7,7 +7,12 @@ function Header() {
         map
       </div>
       <div className="headerRight">
-        EUROPE
+        <p className="headerRightTitle">
+          Europe
+        </p>
+        <p className="headerRightSubTitle">
+          2958 views
+        </p>
       </div>
     </div>
   );
