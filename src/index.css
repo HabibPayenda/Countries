@@ -48,10 +48,15 @@
   gap: 0.5rem;
 }
 
+.navbar-middle {
+  font-size: 1.4rem;
+}
+
 .navbar-left {
   display: flex;
   margin-right: 2rem;
   gap: 2rem;
+  font-size: 1.4rem;
 }
 
 .header {
