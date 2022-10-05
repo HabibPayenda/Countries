@@ -39,6 +39,7 @@
   font-size: 1.2rem;
   color: var(--color-light);
   background-color: var(--color-pink-dark);
+  font-size: 1.4rem;
 }
 
 .navbar-right {
@@ -49,7 +50,7 @@
 }
 
 .navbar-middle {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .navbar-left {
@@ -67,6 +68,7 @@
   width: 100%;
   background-color: var(--color-pink-light);
   color: var(--color-light);
+  font-size: 1.4rem;
 }
 
 .headerLeft {
@@ -90,11 +92,13 @@
   align-items: flex-start;
   justify-content: center;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .headerRightTitle {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  font-weight: 700;
   font-stretch: extra-expanded;
 }
 

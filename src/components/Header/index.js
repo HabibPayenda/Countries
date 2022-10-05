@@ -10,12 +10,12 @@ function Header({ population, title = 'Southern Asia', flag }) {
         <img className="headerImg" src={flag ? flag : map} alt={title} />
       </div>
       <div className="headerRight">
-        <p className="headerRightTitle">
+        <p style={title !== 'Southern Asia' ? { alignSelf: 'flex-end' } : { alignSelf: 'flex-start' }} className="headerRightTitle">
           {
           title
           }
         </p>
-        <p className="headerRightSubTitle">{`${Math.round(population / 1000000)} M  People`}</p>
+        <p style={title !== 'Southern Asia' ? { alignSelf: 'flex-end' } : { alignSelf: 'flex-start' }} className="headerRightSubTitle">{`${Math.round(population / 1000000)} M  People`}</p>
       </div>
     </div>
   );
