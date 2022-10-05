@@ -1,18 +1,20 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-param-reassign */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from './Card';
 
 function List({ data }) {
   const classes = [];
   const toDisplay = data.map((item) => (
-    <Card
-      name={item.name.common}
-      population={item.population}
-      flag={item.flags.png}
-      color={[]}
+    <Link
+      style={{ textDecoration: 'none' }}
       key={item.ccn3}
-    />
+      to="details"
+      state={{ capital: item.capital[0] }}
+    >
+      <Card name={item.name.common} population={item.population} flag={item.flags.png} color={[]} />
+    </Link>
   ));
 
   for (let c = 0; c < data.length; c += 1) {
@@ -30,7 +32,7 @@ function List({ data }) {
   }
 
   toDisplay.forEach((card, index) => {
-    card.props.color.push(classes[index]);
+    card.props.children.props.color.push(classes[index]);
   });
 
   const numberOfRows = Math.round(data.length / 2);
