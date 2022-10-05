@@ -20,7 +20,7 @@ function DetailScreen() {
   }
   return (
     <div style={{ width: '100%' }}>
-      <Navbar />
+      <Navbar country={data ? data.name.common : ''} />
       <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Southern Asia'} population={data ? data.population : 0} />
       <div className="detailsBanner">
         Country info
