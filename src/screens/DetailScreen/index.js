@@ -21,11 +21,13 @@ function DetailScreen() {
   return (
     <div style={{ width: '100%' }}>
       <Navbar />
-      <Header />
-      <DetailsCard name={data ? data.name.common : ''} />
-      <DetailsCard />
-      <DetailsCard />
-      Details
+      <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Southern Asia'} population={data ? data.population : 0} />
+      <DetailsCard light title="Area" value={data ? data.area : ''} />
+      <DetailsCard title="Latitude" value={data ? data.latlng[0] : 0} />
+      <DetailsCard light title="Longitude" value={data ? data.latlng[1] : 0} />
+      <DetailsCard title="Time Zone" value={data ? data.timezones[0] : ''} />
+      <DetailsCard light title="Capital Latitude" value={data ? data.capitalInfo.latlng[0] : ''} />
+      <DetailsCard title="Capital Longitude" value={data ? data.capitalInfo.latlng[1] : ''} />
     </div>
   );
 }

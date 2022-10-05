@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function DetailsCard({ name, population }) {
+function DetailsCard({ title = 'none', value = 0, light }) {
   return (
-    <div className="detailsCard">
+    <div className={`detailsCard ${light ? 'light' : 'dark'}`}>
       <div className="detailsCardLeft">
-        <p className="detailsCardTitle">{name}</p>
+        <p className="detailsCardTitle">{title}</p>
       </div>
       <div className="detailsCardRight">
-        <p className="detailsCardNumber">{`${Math.round(population / 1000000)} M`}</p>
+        <p className="detailsCardNumber">{`${value}`}</p>
         <i className="fa-regular fa-circle-right detailsCardIcon" />
       </div>
     </div>
