@@ -22,6 +22,9 @@ function DetailScreen() {
     <div style={{ width: '100%' }}>
       <Navbar />
       <Header flag={data ? data.flags.png : ''} title={data ? data.name.common : 'Southern Asia'} population={data ? data.population : 0} />
+      <div className="detailsBanner">
+        Country info
+      </div>
       <DetailsCard light title="Area" value={data ? data.area : ''} />
       <DetailsCard title="Latitude" value={data ? data.latlng[0] : 0} />
       <DetailsCard light title="Longitude" value={data ? data.latlng[1] : 0} />
