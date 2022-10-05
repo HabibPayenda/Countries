@@ -122,7 +122,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .homeCardTop {
@@ -134,8 +134,8 @@
 }
 
 .homeCardTopImg {
-  height: 4rem;
-  width: 7rem;
+  height: 6rem;
+  width: 9rem;
 }
 
 .cardIcon {
@@ -162,11 +162,11 @@
 }
 
 .homeCardTitle {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .homeCardNumber {
-  font-size: 1em;
+  font-size: 1.4rem;
 }
 
 .dark {

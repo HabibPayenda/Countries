@@ -9,7 +9,7 @@ function Navbar({ country }) {
         <div className="navbar-right">
           <i className="fa-solid fa-chevron-left" />
           <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-            All Countries
+            Back
           </Link>
         </div>
       )}
