@@ -1,38 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Countries
 
-> Description the project.
+> Countries is a small we app which gets south asian countries details from an api and shows its' details like name, flag, lag, long and population.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- React
+- Redux
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://southaisacountries.netlify.app/)
+[Video](https://www.loom.com/share/4d64c7ec565b413b873756f794252c01)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Install node.js and npm.
+- Install Git.
+
 ### Setup
 
+- Clone the repository by running the following command in your terminal:
+    git clone https://github.com/HabibPayenda/Countries.git
+    
+- Change your directory by by running the following command in your terminal:
+    cd Countries
+
 ### Install
+- Install the dependencies by running npm i in your terminal
 
 ### Usage
 
+- After all the dependencies are installed open the app by running npm start in your terminal
+
 ### Run tests
+
+To test the application run npm test in your terminal.
 
 ### Deployment
 
@@ -40,17 +51,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Habib Payenda**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@HabibPayenda](https://github.com/githubhandle)
+- Twitter: [@HabibPayenda](https://twitter.com/twitterhandle)
+- LinkedIn: [@HabibPayenda](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -65,7 +70,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Original design by Nelson Sakwa in Behance https://www.behance.net/sakwadesignstudio
 - etc
 
 ## 📝 License
