@@ -14,6 +14,7 @@
 ## Live Demo (if available)
 
 [Live Demo Link](https://southaisacountries.netlify.app/)
+[Video](https://www.loom.com/share/4d64c7ec565b413b873756f794252c01)
 
 
 ## Getting Started
@@ -69,7 +70,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Original design by Nelson Sakwa in Behance https://www.behance.net/sakwadesignstudio
 - etc
 
 ## 📝 License
