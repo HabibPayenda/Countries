@@ -10,7 +10,7 @@ function List({ data }) {
     <Link
       style={{ textDecoration: 'none' }}
       key={item.ccn3}
-      to="details"
+      to={`details:${item.name.common}`}
       state={{ capital: item.capital[0] }}
     >
       <Card name={item.name.common} population={item.population} flag={item.flags.png} color={[]} />
